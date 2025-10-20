@@ -1,0 +1,13 @@
+{
+  "name": "spinnergy",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm --prefix client install && npm --prefix server install",
+    "build": "npm run install-all && npm --prefix client run build",
+    "start": "npm run build && node server/src/index.js"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
